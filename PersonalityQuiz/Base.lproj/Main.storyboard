@@ -158,6 +158,9 @@
                                         <rect key="frame" x="146.33333333333334" y="267" width="121.33333333333334" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonTapped" destination="Kp7-rI-ttG" eventType="touchUpInside" id="BMM-B0-00J"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -193,6 +196,9 @@
                                         <rect key="frame" x="0.0" y="137.33333333333331" width="414" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonTapped" destination="Kp7-rI-ttG" eventType="touchUpInside" id="ocS-wr-80e"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -203,21 +209,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonTapped:" destination="Kp7-rI-ttG" eventType="touchUpInside" id="qCP-en-2mX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aj2-4h-Qt3">
                                         <rect key="frame" x="0.0" y="51" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonTapped:" destination="Kp7-rI-ttG" eventType="touchUpInside" id="t2N-1W-aH9"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2d-F3-gtW">
                                         <rect key="frame" x="0.0" y="102" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonTapped:" destination="Kp7-rI-ttG" eventType="touchUpInside" id="QnA-ps-zYY"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghh-FI-akM">
                                         <rect key="frame" x="0.0" y="153" width="67" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonTapped:" destination="Kp7-rI-ttG" eventType="touchUpInside" id="EVa-ir-FgH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -252,6 +270,26 @@
                     </view>
                     <navigationItem key="navigationItem" id="8VT-Eo-e3a"/>
                     <connections>
+                        <outlet property="multiLabel1" destination="7Sp-s6-WuO" id="FoA-GV-Bmn"/>
+                        <outlet property="multiLabel2" destination="MYU-dh-Mre" id="IFg-pK-olT"/>
+                        <outlet property="multiLabel3" destination="9ef-KK-WSb" id="goI-mz-Cbk"/>
+                        <outlet property="multiLabel4" destination="Pf0-vm-3bp" id="VFD-Gp-M0g"/>
+                        <outlet property="multiSwitch1" destination="roh-2y-8PG" id="pyt-xo-0yy"/>
+                        <outlet property="multiSwitch2" destination="jsF-rJ-Svb" id="1gb-ME-atD"/>
+                        <outlet property="multiSwitch3" destination="5LS-T5-WID" id="qFn-PE-qlz"/>
+                        <outlet property="multiSwitch4" destination="iiG-8D-f4p" id="8zR-Vq-xb5"/>
+                        <outlet property="multipleStackView" destination="qWc-bO-fOI" id="Z6Q-iJ-dAV"/>
+                        <outlet property="questionLabel" destination="Kop-mW-eGZ" id="a7R-e7-KgF"/>
+                        <outlet property="questionProgressView" destination="9Jw-2u-Z7p" id="Sjm-4A-ILa"/>
+                        <outlet property="rangedLabel1" destination="dhl-o5-PUv" id="zhO-01-GdR"/>
+                        <outlet property="rangedLabel2" destination="m42-YK-jR1" id="uat-gJ-5yh"/>
+                        <outlet property="rangedSlider" destination="VYG-wF-ny2" id="KLF-DG-R7z"/>
+                        <outlet property="rangedStackView" destination="P0O-19-yuf" id="oma-xV-kxV"/>
+                        <outlet property="singleButton1" destination="8Hj-9I-w90" id="Nsc-tr-GjF"/>
+                        <outlet property="singleButton2" destination="aj2-4h-Qt3" id="DA5-fY-JuZ"/>
+                        <outlet property="singleButton3" destination="c2d-F3-gtW" id="JNA-4R-c7K"/>
+                        <outlet property="singleButton4" destination="Ghh-FI-akM" id="X7u-gg-Deq"/>
+                        <outlet property="singleStackView" destination="ehH-rI-VN7" id="87r-3I-tK9"/>
                         <segue destination="7yU-jZ-ndx" kind="show" identifier="ResultsSegue" id="sQR-rP-Wjh"/>
                     </connections>
                 </viewController>
