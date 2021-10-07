@@ -8,12 +8,15 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
-
+    @IBOutlet weak var resultAnswerLabel: UILabel!
+    @IBOutlet weak var resultDefinitionLabel: UILabel!
+    
     var responses: [Answer]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         calculatePersonalityResult()
+        navigationItem.hidesBackButton = true
     }
 }
 
@@ -38,5 +41,8 @@ extension ResultsViewController {
         //위의 과정들을 trailing closure를 이용하여 다음과 같이 간단하게 표현할 수 있다.
         //let mostCommonAnswer = frequencyOfAnswers.sorted { $0.1 > $1.1 }.first!.key
         //$0는 pair1, $1은 pair2를 의미. $0.1은 pair1의 튜플 중 2번째 요소, 즉 (key, value)중 value를 의미.
+        
+        resultAnswerLabel.text = "You are a \(mostCommonAnswer.rawValue)!"
+        resultDefinitionLabel.text = mostCommonAnswer.definition
     }
 }
