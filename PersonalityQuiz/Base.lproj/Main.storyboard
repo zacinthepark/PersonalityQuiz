@@ -63,7 +63,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rSK-5Q-9lC" secondAttribute="trailing" id="41q-GP-hHe"/>
                             <constraint firstItem="Xhb-tq-bKS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Bot-22-h7c"/>
@@ -250,7 +250,7 @@
                             </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tT6-d0-OZj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ehH-rI-VN7" firstAttribute="centerY" secondItem="X57-zA-v92" secondAttribute="centerY" id="26C-qs-ENH"/>
                             <constraint firstItem="qWc-bO-fOI" firstAttribute="leading" secondItem="tT6-d0-OZj" secondAttribute="leading" id="9fn-y1-w4U"/>
@@ -324,7 +324,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7yI-g1-uXI"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
                             <constraint firstItem="0yD-Fs-KRl" firstAttribute="leading" secondItem="7yI-g1-uXI" secondAttribute="leading" id="Xef-MJ-VyS"/>
                             <constraint firstItem="7yI-g1-uXI" firstAttribute="trailing" secondItem="0yD-Fs-KRl" secondAttribute="trailing" id="dbt-YD-SNk"/>
@@ -369,8 +369,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
